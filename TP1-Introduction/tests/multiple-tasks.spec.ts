@@ -16,6 +16,6 @@ test('ajouter et supprimer plusieurs tâches', async ({ page }) => {
   await page.click('.destroy', { force: true });
 
   // 4. Vérifie les résultats
-  await expect(page.getByText('Aller courir')).toBeVisible();      // doit rester
-  await expect(page.getByText('Acheter du pain')).not.toBeVisible(); // doit disparaître
+  await expect(page.getByText('Aller courir')).toBeVisible();      
+  await expect(page.getByText('Acheter du pain')).not.toBeVisible();
 });
